@@ -1,5 +1,8 @@
-#include <Arduino.h>
+#ifndef LEDDRIVER_H_
+#define LEDDRIVER_H_
 
+#include <Arduino.h>
+ 
 class LEDDriver
 {
 public:
@@ -33,3 +36,5 @@ private:
 
     const bool kLedLUT[4][3] = {{1, 0, 0}, {0, 1, 1}, {1, 0, 1}, {0, 1, 0}};
 };
+
+#endif // LEDDRIVER_H_
